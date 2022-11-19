@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Codign Chemist</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="static/images/new.bmp" type="image/bmp" sizes="16x16">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="javascript/script1.js"></script>
+</head>
+    
+<body>
+    <header>
+        <div id="banner"></div>
+    </header>
+    
+    <nav>
+        <a href="/"><i class="fa fa-home"></i>&nbsp;<b>Home</b></a>
+        <a href="/course"><i class="fa fa-edit"></i>&nbsp;<b>Courses</b></a>
+        <a href=""><i class="fa fa-users"></i>&nbsp;<b>About Us</b></a>
+        <a href="/contact"><i class="fa fa-phone"></i>&nbsp;<b>Contact</b></a>
+        <a href="/logout"><i class="fa fa-end"></i>&nbsp;<b>Logout</b></a>
+
+        <h4><i class="fa fa-user"></i>&nbsp;{{request.user}}</h4>
+    </nav> 
+
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+      {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+   
+      {% block body %}
+      {% endblock body %}
+
+    <footer>
+        <a href="#"><i class="fa fa-angellist"></i>&nbsp;FAQ</a>
+        <a href="#"><i class="fa fa-phone"></i>&nbsp;Contact Us</a>
+        <a href="#"><i class="fa fa-angellist"></i>&nbsp;Terms of Use</a>
+        <a href="#"><i class="fa fa-edit"></i>&nbsp;Privacy Policy</a>
+        <a href="#"><i class="fa fa-inr"></i>&nbsp;Refund Policy</a>
+        <p style="color: white;">&copy; 2020 | Coding Chemist</p>
+    </footer>
+
+    
+</body>
+    
+</html>

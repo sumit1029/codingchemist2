@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container px-0">
+            <img src="https://source.unsplash.com/1500x300/?message, message" class="d-block w-100 mx-0" alt="...">      
+</div>
+
+<div class="conti my-0">
+<h1> CONTACT US </h1>
+<form method="post" action="/contact">
+    {% csrf_token %}
+<div class="form-floating mb-3" style="textalign: center">
+    <input type="text" class="form-control" id="floatingInput" name="name" placeholder="Enter your name">
+    <label for="name"></label>
+  </div>
+  <div class="form-floating">
+    <input type="text" class="form-control" id="floatingPassword" name="msg" placeholder="Message">
+    <label for="msg"></label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+{% endblock body %}

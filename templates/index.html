@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block body %}
+    <main>
+        <h2>MY WORKS</h2>
+        <section id = "container1">
+            
+            <a href="https://github.com/sumit1029/Javascript_Animation" target="_blank" alt="poster">
+                <img src="https://source.unsplash.com/1600x2250/?javascript" width="100%">
+            </a>
+            <a href="https://github.com/sumit1029/My_Project" target="_blank" alt="poster">
+                <img src="https://source.unsplash.com/1600x2250/?train" width="100%">
+            </a>
+            <a href="https://github.com/sumit1029/Data-visualization" target="_blank" alt="poster">
+                <img src="https://source.unsplash.com/1600x2250/?data" width="100%">
+            </a>
+        </section>
+
+        <h2>MY REVIEWS</h2>
+        <section id = "container2">
+            
+            
+                <div><img src="https://source.unsplash.com/1600x2250/?feedback" width="100%"></div>
+            
+            
+                <div><img src="https://source.unsplash.com/1600x2250/?reviews" width="100%"></div>
+           
+            
+                <div><img src="https://source.unsplash.com/1600x2250/?awesome" width="100%"></div>
+           
+        </section>
+
+        <h2>MY README CONTENT</h2>
+        <section id="container3">
+            
+            <div><button onclick="prev()" style="display: flex; max-width: 80px; max-height: 80px;"> Prev </button></div>
+            <div id = "s1"><a href="https://www.youtube.com/channel/UC3K2nGS4rvTfPlh-Rzx80OA" id="aslider" target="_blank">
+                <img id="slider" src="https://source.unsplash.com/1600x2250/?about" width="80%">
+            </a></div>
+            <div><button onclick="next()" style="display: flex; max-width: 80px; max-height: 80px;"> Next </button></div>
+        </section>
+
+        <h2>OUR FOUNDER</h2>
+        <img src="static/images/found.jpg" alt="THis is Sumit Kumar" width="30%">
+        <h3>Sumit Kumar</h3>
+        <section id="container4">
+            <div class = "new">
+                <div><a href="https://www.linkedin.com/in/sumit-kumar-56b30a202" target="_blank" class="fa fa-linkedin" style="color: rgb(93, 14, 219);font-weight:900;">           &nbsp; linkedin</a></div>
+                <div><a href="https://www.facebook.com/profile.php?id=100025141931898" target="_blank" class="fa fa-facebook" style="color: blue;font-weight:900;">        &nbsp;  Facebook</a></div>
+                <div><a href="https://www.instagram.com/sumitnaveen029/" target="_blank" class="fa fa-instagram" style="color: rgb(235, 15, 107);font-weight:900;;"">        &nbsp;  Instagram</a></div>
+                <div><a href="https://www.youtube.com/channel/UC3K2nGS4rvTfPlh-Rzx80OA" target="_blank" class="fa fa-youtube" style="color: rgb(216, 25, 25);font-weight:900;;"">        &nbsp;  YouTube</a></div>
+                <div><a href="https://www.codechef.com/users/sumit_1029" target="_blank" style="color: saddlebrown;font-weight:900;" id = "imp"><span class="iconify-inline" data-icon="simple-icons:codechef"></span> &nbsp; CodeChef</a></div>
+            </div>
+        </section>
+
+        <h4>Young innovative <em>self thought learner</em> #Coder on his own #Skillfull in all types of programming.</h4>
+        <h5>Hellow guys, I hope that you all are doing well.As you all know that being a self emerging artist I really do need a lots of support from you all, to trace my footsteps in the field I have dived into.Your support not only promotes my work but also makes me motivated to provide you with the best I have got.Thanks for praiseing my work .Do join and follow me on youtube and instagram with above links.</h5>
+    </main>
+    {% endblock body %}
